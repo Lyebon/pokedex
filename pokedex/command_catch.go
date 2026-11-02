@@ -13,7 +13,7 @@ func commandCatch(cfg *config, rest ...string) error {
 		return err
 	}
 	random := rand.Intn(pCatch.BaseExperience)
-	fmt.Printf("Throwing a Pokeball at %v...", target)
+	fmt.Printf("Throwing a Pokeball at %v...\n", target)
 	cal := int(math.Round(float64(pCatch.BaseExperience)/1.5))
 	if random >= cal {
 		fmt.Println(target, "was caught!")
